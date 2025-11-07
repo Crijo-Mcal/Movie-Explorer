@@ -1,0 +1,36 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import { createRoot } from "react-dom/client";
+import "./index.css";
+
+/* pages */
+import Home from "./pages/Home";
+import Detail from "./pages/detail";
+import Category from "./pages/Category";
+import Page404 from "./pages/Page404";
+import Search from "./pages/Search";
+import Layout from "./pages/Layout";
+
+createRoot(document.getElementById("root")).render(
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Home />}></Route>
+
+        <Route path="/movie">
+          <Route path="category/:category" element={<Category />}></Route>
+          <Route path="detail/:id" element={<Detail />}></Route>
+        </Route>
+
+        <Route path="/TV">
+          <Route path="category/:category" element={<Category />}></Route>
+          <Route path="detail/:id" element={<Detail />}></Route>
+        </Route>
+
+        <Route path="/search/:name" element={<Search />}></Route>
+
+        <Route path="*" element={<Page404 />}></Route>
+      </Route>
+    </Routes>
+  </BrowserRouter>
+);

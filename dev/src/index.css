@@ -1,0 +1,35 @@
+@font-face {
+  font-family: roboto;
+  src: url('./assets/Roboto-VariableFont_wdth\,wght.ttf');
+}
+
+@font-face {
+  font-family: roboto_italic;
+  src: url('./assets/Roboto-Italic-VariableFont_wdth\,wght.ttf');
+}
+
+
+
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #FE7743;
+  --color-secondary: #EFEEEA;
+  --color-bg1: #082032;
+  --color-bg2: #2C394B;
+  --font-roboto: 'roboto', sans-serif;
+  --font-roboto_italic: 'roboto_italic', sans-serif;
+  --shadow-type1: 0 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+#root {
+  background: #082032;
+  font-family: roboto;
+  left: 0;
+  right: 0;
+  min-width: 240px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

@@ -1,6 +1,6 @@
 🎬 Movie Explorer
 
-Movie Explorer is my first web application that allows users to explore movies from around the world. Users can search for movies by title and view details such as synopsis, rating, release date, and poster.
+This is my first Movie Explorer web application, which allows users to explore movies from around the world. Users can search for movies by title and view details such as synopsis, rating, release date, and poster.
 
 ✨ Key Features
 

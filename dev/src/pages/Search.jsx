@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 /* components */
-import NavBar from "../components/Navbar";
 import { getmulti } from "../api/get";
 /* image */
 import imgDefault from "../assets/image.png";

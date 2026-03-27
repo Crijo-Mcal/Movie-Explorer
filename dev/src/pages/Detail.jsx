@@ -5,7 +5,7 @@ import { getMovieById, getTVById } from "../api/get";
 import { motion } from "framer-motion";
 
 /* components import */
-import NavBar from "../components/NavBar";
+import NavBar from "../components/Navbar";
 
 /* image */
 import imgDefault from "../assets/image.png";

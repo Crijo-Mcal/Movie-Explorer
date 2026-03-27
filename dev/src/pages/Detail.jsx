@@ -24,7 +24,7 @@ function Information({ data }) {
     >
       {/* Poster */}
 
-      <div className="w-60 sm:w-[300px] shrink-0">
+      <div className="w-60 sm:w-75 shrink-0">
         {data.poster_path ? (
           <img
             src={`https://image.tmdb.org/t/p/w500${data.poster_path}`}
@@ -32,7 +32,7 @@ function Information({ data }) {
             className="w-full rounded-2xl shadow-xl border border-gray-700"
           />
         ) : (
-          <div className="w-full h-[449px] border-2  mt-2 rounded-lg flex justify-center items-center">
+          <div className="w-full h-112.25 border-2  mt-2 rounded-lg flex justify-center items-center">
             <img src={imgDefault} alt={title} className="w-[50%]" />
           </div>
         )}

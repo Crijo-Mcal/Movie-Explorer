@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 /* components */
-import NavBar from "../components/NavBar";
+import NavBar from "../components/Navbar";
 import { getmulti } from "../api/get";
 /* image */
 import imgDefault from "../assets/image.png";
@@ -38,17 +38,17 @@ export default function Search() {
                   duration: 0.6,
                   ease: "easeOut",
                 }}
-                className="w-full max-w-[1228px] p-4 h-auto  bg-bg2 flex  sm:flex-row flex-col justify-center items-center cursor-pointer "
+                className="w-full max-w-307 p-4 h-auto  bg-bg2 flex  sm:flex-row flex-col justify-center items-center cursor-pointer "
                 onClick={() => Navigate(x.media_type, x.id)}
               >
                 {x.poster_path ? (
                   <img
                     src={`https://image.tmdb.org/t/p/w500${x.poster_path}`}
                     alt="img"
-                    className="w-[150px]"
+                    className="w-37.5"
                   />
                 ) : (
-                  <div className="w-[150px] h-[225px] border-2 border-secondary flex justify-center items-center">
+                  <div className="w-37.5 h-56.25 border-2 border-secondary flex justify-center items-center">
                     <img
                       src={imgDefault}
                       alt={x.title || x.name}

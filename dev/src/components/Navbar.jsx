@@ -80,7 +80,7 @@ function Hambuger({ setHambugerState }) {
         <img
           src={logo}
           alt="logo"
-          className="w-[70px]"
+          className="w-17.5"
           onClick={() => (navigate("/"), setHambugerState(false))}
         />
       </div>
@@ -169,7 +169,7 @@ export default function NavBar() {
         className=" w-full   h-17 bg-bg2  shadow-[0_3px_11px_rgba(0,0,0,0.2)] flex  justify-center  items-center "
         onMouseLeave={removeOption}
       >
-        <div className="relative w-full max-w-[1228px] sm:w-[98%] h-17 flex justify-around sm:justify-end items-center gap-5 ">
+        <div className="relative w-full max-w-307 sm:w-[98%] h-17 flex justify-around sm:justify-end items-center gap-5 ">
           {/* Logo */}
           <img
             src={logo}

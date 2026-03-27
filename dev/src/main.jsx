@@ -5,7 +5,7 @@ import "./index.css";
 
 /* pages */
 import Home from "./pages/Home";
-import Detail from "./pages/detail";
+import Detail from "./pages/Detail";
 import Category from "./pages/Category";
 import Page404 from "./pages/Page404";
 import Search from "./pages/Search";
@@ -32,5 +32,5 @@ createRoot(document.getElementById("root")).render(
         <Route path="*" element={<Page404 />}></Route>
       </Route>
     </Routes>
-  </BrowserRouter>
+  </BrowserRouter>,
 );

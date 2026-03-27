@@ -1,4 +1,3 @@
-import NavBar from "../components/NavBar";
 import Hero from "../components/Hero";
 import TopRateCarousel from "../components/TopRateCarousel";
 import PopularCarousel from "../components/PopularCarousel";

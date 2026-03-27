@@ -5,20 +5,12 @@
       "destination": "/static/$1"
     },
     {
-      "source": "/assets/(.*)",
-      "destination": "/assets/$1"
-    },
-    {
-      "source": "/favicon.ico",
-      "destination": "/favicon.ico"
-    },
-    {
-      "source": "/manifest.json",
-      "destination": "/manifest.json"
+      "source": "/(.*)\\.(js|css|png|jpg|jpeg|svg|ico|json)$",
+      "destination": "/$1.$2"
     },
     {
       "source": "/(.*)",
-      "destination": "/"
+      "destination": "/index.html"
     }
   ]
 }

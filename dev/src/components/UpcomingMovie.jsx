@@ -48,7 +48,7 @@ export default function UpcomingMovie() {
       </div>
 
       {/* Header */}
-      <div className="w-full max-w-[1228px] h-8 flex gap-2 items-center pl-4 sm:pl-0 z-1">
+      <div className="w-full max-w-307 h-8 flex gap-2 items-center pl-4 sm:pl-0 z-1">
         <h1 className="text-[21px] font-black text-primary">Upcoming Movie</h1>
       </div>
 
@@ -66,7 +66,7 @@ export default function UpcomingMovie() {
             1008: { slidesPerView: 6 },
             1228: { slidesPerView: 6.5 },
           }}
-          className="w-full max-w-[1228px] h-[370px]"
+          className="w-full max-w-307 h-92.5"
         >
           {Data?.map((x, i) => (
             <SwiperSlide key={i}>

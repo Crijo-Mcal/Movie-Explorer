@@ -51,12 +51,12 @@ export default function Search() {
                     <img
                       src={imgDefault}
                       alt={x.title || x.name}
-                      className="w-[50px]"
+                      className="w-12.5"
                     />
                   </div>
                 )}
 
-                <div className="w-full sm:w-[90%] min-h-[145px] items-center sm:items-start  p-4 flex gap-4 justify-center  flex-col">
+                <div className="w-full sm:w-[90%] min-h-36.25 items-center sm:items-start  p-4 flex gap-4 justify-center  flex-col">
                   <h1 className="text-primary text-[19px] font-extrabold text-shadow-2xs">
                     {x.title || x.name}
                   </h1>

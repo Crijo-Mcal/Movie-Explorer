@@ -34,7 +34,7 @@ export default function SearchBar({ removeOption }) {
   return (
     <form
       onSubmit={handleSubmit}
-      className="w-full max-w-[300px] sm:max-w-[500px] h-9 rounded-full bg-secondary flex items-center overflow-hidden shadow-type1 mr-2 sm:mr-0"
+      className="w-full max-w-75 sm:max-w-125 h-9 rounded-full bg-secondary flex items-center overflow-hidden shadow-type1 mr-2 sm:mr-0"
       onMouseEnter={removeOption}
     >
       <div className="flex-1 pl-3">

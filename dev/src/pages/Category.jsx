@@ -62,7 +62,7 @@ export default function Category() {
   return (
     <>
       <main className="w-[99%] min-h-screen  flex  flex-wrap justify-center  ">
-        <div className="w-full max-w-[1228px] h-auto flex gap-4 flex-wrap justify-center sm:px-4 py-8  ">
+        <div className="w-full max-w-307 h-auto flex gap-4 flex-wrap justify-center sm:px-4 py-8  ">
           {movie !== null &&
             movie.map((x, i) => (
               <Card movie={x} key={i} type={isMovie ? "movie" : "tv"} />

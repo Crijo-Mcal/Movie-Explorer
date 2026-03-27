@@ -37,13 +37,13 @@ export default function TopRateCarousel() {
   }, [input]);
 
   return (
-    <section className="w-full max-w-[1228px] h-auto flex flex-col gap-4 pt-8 justify-center items-center">
+    <section className="w-full max-w-307 h-auto flex flex-col gap-4 pt-8 justify-center items-center">
       {/* Header */}
       <div className="w-full min-h-8 flex gap-2 items-center pl-4 sm:pl-0 flex-wrap">
         <h1 className="text-[21px] font-black text-primary">Top Rate</h1>
         <form>
           <select
-            className="w-[170px] h-6 bg-secondary rounded-full text-[14px] text-slate-400 outline-none pl-2 pb-0.2"
+            className="w-42.5 h-6 bg-secondary rounded-full text-[14px] text-slate-400 outline-none pl-2 pb-0.2"
             onChange={handleCanges}
           >
             <option value="movie">Movie</option>
@@ -67,7 +67,7 @@ export default function TopRateCarousel() {
             1008: { slidesPerView: 6 }, // Tablet
             1228: { slidesPerView: 6.5 }, // Desktop besar
           }}
-          className="w-full h-[370px]"
+          className="w-full h-92.5"
         >
           {data != null &&
             data.map((x, i) => (

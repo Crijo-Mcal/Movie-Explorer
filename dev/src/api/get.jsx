@@ -1,4 +1,4 @@
-const api_key = import.meta.env.VITE_TMDB_API_KEY;
+const api_key = import.meta.env.TMDB_API_KEY;
 
 /* movie */
 export async function getMoviePage1(saveData, category, page = 1) {

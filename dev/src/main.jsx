@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import {analytics} from "@vercel/analytics/react";
+import {Analytics} from "@vercel/analytics/react";
 
 
 import { createRoot } from "react-dom/client";
@@ -15,7 +15,7 @@ import Layout from "./pages/Layout";
 
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
-  <analytics/>
+  <Analytics/>
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />}></Route>

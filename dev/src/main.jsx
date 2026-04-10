@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Analytics } from "@vercel/analytics/react";
 
 import { createRoot } from "react-dom/client";
 import "./index.css";
@@ -32,5 +33,6 @@ createRoot(document.getElementById("root")).render(
         <Route path="*" element={<Page404 />}></Route>
       </Route>
     </Routes>
+    <Analytics />
   </BrowserRouter>,
 );

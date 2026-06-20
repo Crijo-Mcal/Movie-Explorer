@@ -4,6 +4,7 @@ import {Analytics} from "@vercel/analytics/react";
 
 import { createRoot } from "react-dom/client";
 import "./index.css";
+import { Analytics } from "@vercel/analytics/react";
 
 /* pages */
 import Home from "./pages/Home";
@@ -35,5 +36,6 @@ createRoot(document.getElementById("root")).render(
         <Route path="*" element={<Page404 />}></Route>
       </Route>
     </Routes>
+    <Analytics />
   </BrowserRouter>,
 );
